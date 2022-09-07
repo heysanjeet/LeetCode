@@ -5,9 +5,8 @@ import java.util.Set;
 
 public class ContainDuplicate {
     /**
-     * Input: nums = [1,2,3,1]
-     * Output: true
-     *
+     * @param Input: nums = [1,2,3,1]
+     * @return Output: true
      */
     //Native O(n^2) and space O(1)
     public static boolean containDuplicate(int[] nums) {
