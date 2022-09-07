@@ -1,6 +1,13 @@
 package arrays.easy;
 
 public class Anagram {
+    /**
+     * Input: s = "anagram", t = "nagaram"
+     * Output: true
+     *
+     * Input: s = "rat", t = "car"
+     * Output: false
+     */
 
     public static boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
