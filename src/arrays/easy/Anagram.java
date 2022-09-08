@@ -26,6 +26,7 @@ public class Anagram {
         return true;
     }
 
+
     public static void main(String[] args) {
         boolean result=isAnagram("anagram","nagaram");
         System.out.println(result);
