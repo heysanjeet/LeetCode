@@ -20,19 +20,26 @@ public class TwoSum {
         }
         return new int[]{};
     }
-
+    //Better approach
     public static int[] twoSum(int[] nums, int target) {
-        Map<Integer,Integer> prevMap=new HashMap<>();
-        for(int i=0;i<nums.length;i++){
-
+        Map<Integer, Integer> prevMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int diff = target - nums[i];
+            if (prevMap.containsKey(diff)) {
+                return new int[]{prevMap.get(diff), i};
+            }
+            prevMap.put(nums[i], i);
         }
+        return new int[]{};
     }
 
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
-        int target = 17;
+        int target = 9;
         int[] result = twoSum(nums, target);
-        System.out.println(result[0] + "," + result[1]);
+        for (int val : result) {
+            System.out.print(val+" ");
+        }
     }
 
 }
