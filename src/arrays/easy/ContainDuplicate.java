@@ -20,7 +20,7 @@ public class ContainDuplicate {
         return false;
     }
 
-    //Better approach O(n) and space O(n)
+    // Better approach O(n) and space O(n)
     public static boolean containDuplicateB(int[] nums) {
         Set<Integer> set = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
